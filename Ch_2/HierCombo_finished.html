@@ -2,28 +2,19 @@
 <html>
 
 <head>
-    <title>Hierarchy Selectors</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../style.css" />
-    <script type="text/javascript" src="../jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="../jquery-3.3.1.js"></script>
     <script type="text/javascript">
         $("document").ready(function() {
-        // The child selector "parent > child" selects "child" elements that are
-        // immediate descendants of the "parent"
-        //$("div > p").css("border", "3px solid red");
-        
-        // The descendant selector "ancestor descendant" selects "descendant" elements
-        // as long as they have an "ancestor" element somewhere above them
-        //$("div p.a").css("border", "3px solid red");
-        
-        // The next adjacent selector "prev + next" selects the "next" element if it
-        // is immediately preceded by a "prev" element
-        //$("ul + div").css("border", "3px solid red");
-        
-        // Next sibling selector "prev ~ siblings" selects all "siblings" elements that come
-        // after a "prev" element
-        //$("#para1 ~ p").css("border", "3px solid red");
-    });
-
+            //$("div > p").css("border", "3px solid red");
+            //$("div p a").css("border", "3px solid red");
+            
+            //Select a div it is right next to the ul
+            //$("ul + div").css("border", "3px solid red");
+            
+            $("#para1 ~ p").css("border", "3px solid red");
+        });
     </script>
 </head>
 

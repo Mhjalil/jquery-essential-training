@@ -15,6 +15,14 @@
             
             // Below code styles all even paragraph tags - remember this is 0 based index
             //$("#example p:even").css("border", "3px solid red");
+            
+            // Below code styles the first element with a class of 'a' in the div with the id 'example'
+            //$("#example .a:first").css("border", "3px solid red");
+            
+            //Below code styles all evenly spaced elements with a class of b in the div with the id 'example'
+            //$("#example .b:even").css("border", "3px solid red");
+        
+            $("#example p:not(p:eq(2))").css("border", "3px solid red");
         });
     </script>
 </head>

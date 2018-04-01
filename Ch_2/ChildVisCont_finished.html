@@ -4,25 +4,17 @@
 <head>
     <title>Using Child, Visibility, and Content Filters</title>
     <link rel="stylesheet" type="text/css" href="../style.css" />
-    <script type="text/javascript" src="../jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="../jquery-3.3.1.js"></script>
     <script type="text/javascript">
         $("document").ready(function() {
-            //$("p:contains('3')").css("border", "3px solid red");
-            //$("p:parent").css("border", "3px solid red");
-            //$("div:has(p[class=a])").css("border", "3px solid red");
-            
-            //$("div p:first-child").css("border", "3px solid red");
-            //$("div p:last-of-type").css("border", "3px solid red");
-            //$("div p:nth-child(3)").css("border", "3px solid red");
-            //$("div p:nth-child(2n)").css("border", "3px solid red");
+            $("p:contains('3')").css("border", "3px solid red");
         });
     </script>
 </head>
 
 <body>
     <h1>Using Child, Visibility, and Content Filters</h1>
-    <section id="content">
-
+    <div id="content">
         <p>These selectors are used to retrieve content that matches certain conditions, such as whether they contain certain
             content, whether they are visible/hidden, or whether they are in a certain position within their parent.</p>
         <ul id="list1">
@@ -40,7 +32,7 @@
             <p id="para4" lang="en-us">This is paragraph 4</p>
             <p id="para5" lang="en-gb">This is paragraph 5</p>
         </div>
-    </section>
+    </div>
 </body>
 
 </html>
