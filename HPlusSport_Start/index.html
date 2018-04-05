@@ -11,6 +11,33 @@
         $("h2.product-name[data-type='mineralwater']").css("background", "#3F88C5"); 
         $("h2.product-name[data-type='vitamin']").css("background", "#EF798A"); 
         $("h2.product-name[data-type='proteinbar']").css("background", "#613F75"); 
+        $( "#vitamins" ).click(function() {
+            $(".product-name[data-type='vitamin']").parent().css ({
+                "display": "initial"
+            });
+            $(".product-name[data-type!='vitamin']").parent().css ({
+                "display": "none"
+            });
+        });
+        $( "#proteinbars" ).click(function() {
+            $(".product-name[data-type='proteinbar']").parent().css ({
+                "display": "initial"
+            });
+            $(".product-name[data-type!='proteinbar']").parent().fadeOut('slow');
+        });
+        $( "#mineralwaters" ).click(function() {
+            $(".product-name[data-type='mineralwater']").parent().css ({
+                "display": "initial"
+            });
+            $(".product-name[data-type!='mineralwater']").parent().css ({
+                "display": "none"
+            });
+        });
+        $( "#reset" ).click(function() {
+            $(".product-name").parent().css ({
+                "display": "initial"
+            });
+        });
       });
 </script>
 </head>
@@ -52,6 +79,10 @@
   <header class="imageheader"></header>
   <div class="container">
     <h2 class="headline">Products</h2>
+    <button type="button" id="vitamins">Vitamins</button>
+    <button type="button" id="proteinbars">Protein Bars</button>
+    <button type="button" id="mineralwaters">Mineral Water</button>
+    <button type="button" id="reset">View All</button>
     <p>H+ Sport is <em>dedicated to creating</em> eco-friendly, high-quality, nutrient-rich, nutritional products that <em>enhance active lifestyles</em>. We <a href="#guarantee">guarantee</a> it. Take a look at some of our products.</p>
   </div><!-- container -->
   <ul class="product-list">
